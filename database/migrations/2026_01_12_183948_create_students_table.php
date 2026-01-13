@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-          Schema::create('students', function (Blueprint $table) {
+        Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->unique();
-            $table->string('subtitle')->nullable();
-            $table->string("description")->nullable();
+            $table->string('name')->unique();
+            $table->string('profile')->nullable();
+            $table->string("email")->nullable();
+            $table->string("enroll_course")->nullable();
+            $table->string("status")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

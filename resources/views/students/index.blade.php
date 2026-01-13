@@ -7,62 +7,95 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col">
-                                <h4 class="card-title">Menu Details</h4>
-                            </div>
-                            <!--end col-->
+                                <h4 class="card-title">Students</h4>
+                            </div><!--end col-->
                             <div class="col-auto">
-                                <a href="{{ route('students.create') }}"><button class="btn bg-primary-subtle text-primary"><i
-                                            class="fas fa-plus me-1"></i>Create
-                                        Menu</button></a>
-                            </div>
-                            <!--end col-->
-                        </div>
-                        <!--end row-->
-                    </div>
-                    <!--end card-header-->
+                                <form class="row g-2">
+                                    <div class="col-auto">
+                                        <a class="btn bg-primary-subtle text-primary dropdown-toggle d-flex align-items-center arrow-none"
+                                            data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                            aria-expanded="false" data-bs-auto-close="outside">
+                                            <i class="iconoir-filter-alt me-1"></i> Filter
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-start">
+                                            <div class="p-2">
+                                                <div class="form-check mb-2">
+                                                    <input type="checkbox" class="form-check-input" checked id="filter-all">
+                                                    <label class="form-check-label" for="filter-all">
+                                                        All
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input type="checkbox" class="form-check-input" checked id="filter-one">
+                                                    <label class="form-check-label" for="filter-one">
+                                                        New
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input type="checkbox" class="form-check-input" checked id="filter-two">
+                                                    <label class="form-check-label" for="filter-two">
+                                                        Processing
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input type="checkbox" class="form-check-input" checked
+                                                        id="filter-three">
+                                                    <label class="form-check-label" for="filter-three">
+                                                        Completed
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </form>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end card-header-->
                     <div class="card-body pt-0">
+
                         <div class="table-responsive">
-                            <table class="table mb-0" id="datatable_1">
+                            <table class="table mb-0 checkbox-all" id="datatable_1">
                                 <thead class="table-light">
                                     <tr>
-                                        <th>No.</th>
-                                        <th>title</th>
-                                        <th>subtitle</th>
-                                        <th>description</th>
-                                        <th>Action</th>
+                                        <th style="width: 16px;">
+                                            <div class="form-check mb-0">
+                                                <input type="checkbox" class="form-check-input" name="select-all"
+                                                    id="select-all">
+                                            </div>
+                                        </th>
+                                        <th class="ps-0">Student Name</th>
+                                        <th>Email</th>
+                                        <th>Enroll Course</th>
+                                        <th>Status</th>
+                                        <th class="text-end">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @if ($rows)
-                                        @php($i = 1)
-                                        @foreach ($rows as $row)
-                                            <tr>
-                                                <td>{{ $i++ }}</td>
-                                                <td>{{ $row->title }}</td>
-                                                <td>{{ $row->subtitle }}</td>
-                                                <td>{{ $row->description }}</td>
-                                                <td class="text-end">
-                                                    <a href="{{ route('students.edit', $row->id) }}"
-                                                        class="text-secondary me-2">
-                                                        <i class="las la-pen fs-18"></i>
-                                                    </a>
-                                                    @if ($row->is_superadmin == 0)
-                                                        <form action="{{ route('students.destroy', $row->id) }}" method="POST"
-                                                            style="display:inline;">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit"
-                                                                onclick="return confirm('Do you want to delete?')"
-                                                                class="text-secondary border-0 bg-transparent">
-                                                                <i class="las la-trash-alt fs-18"></i>
-                                                            </button>
-                                                        </form>
-                                                    @endif
+                                    <tr>
+                                        <td style="width: 16px;">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="check"
+                                                    id="customCheck1">
+                                            </div>
+                                        </td>
+                                        <td class="ps-0">
+                                            <img src="{{ asset('backend/assets/images/users/avatar-2.jpg
+                                            ') }}"
+                                                alt="" class="thumb-md d-inline rounded-circle me-1">
+                                            <p class="d-inline-block align-middle mb-0">
+                                                <span class="font-13 fw-medium">Andy Timmons</span>
+                                            </p>
+                                        </td>
+                                        <td><a href="#"
+                                                class="d-inline-block align-middle mb-0 text-body">dummy@dummy.com</a> </td>
+                                        <td>UX UI Design</td>
+                                        <td><span class="badge bg-danger-subtle text-danger">New</span></td>
 
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    @endif
+                                        <td class="text-end">
+                                            <a href="#"><i class="las la-pen text-secondary fs-18"></i></a>
+                                            <a href="#"><i class="las la-trash-alt text-secondary fs-18"></i></a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
