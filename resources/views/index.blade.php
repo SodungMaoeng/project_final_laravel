@@ -95,7 +95,7 @@
         </section>
         <!--==================== End Hero Section =====================-->
         <!--====================== Start Partner Section ======================-->
-        <section class="speedyui speedyui-partner py-4">
+        {{-- <section class="speedyui speedyui-partner py-4">
             <div class="container">
                 <div class="row my-4">
                     <div class="col-12">
@@ -155,7 +155,7 @@
                     </div><!--.col-grid-->
                 </div><!--.row-->
             </div><!--.container-->
-        </section>
+        </section> --}}
         <!--====================== End Partner Section ======================-->
         <!--====================== Start Feature Section ======================-->
         <section class="speedyui speedyui-feature bg-light py-5">
@@ -236,88 +236,8 @@
                      class="course-image" alt="Data Science">
             </div>
             <div class="card-body">
-                <h3 class="course-title">Data Analytics with Python Programming </h3>
-                <p class="course-subtitle">Python help explore how to analyze and visualize data using Pandas, Matplotlib, and real datasets.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.7 (1,900+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Fatima N.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container py-5">
-    <div class="row">
-    <!-- Marketing Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e3f2fd; color: #1565c0;">MARKETING</div>
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Digital Marketing">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Digital Marketing Strategy for Beginners</h3>
-                <p class="course-subtitle">Learn SEO, email marketing, social media strategy, and paid ads in one power-packed course.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.8 (2,500+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Amanda L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Personal Development Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #f3e5f5; color: #7b1fa2;">PERSONAL</div>
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Productivity">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Productivity & Time Management</h3>
-                <p class="course-subtitle">Learn how to organize your time, stay focused, and beat procrastination with proven techniques.</p>
-
-                <div>
-                    <span class="rating">★★★★★</span>
-                    <span class="review-count">4.9 (3,000+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Chris L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Data Science Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e8f5e9; color: #2e7d32;">DATA SCIENCE</div>
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Data Science">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Data Analytics with Python Programming </h3>
-                <p class="course-subtitle">Python help explore how to analyze and visualize data using Pandas, Matplotlib, and real datasets.</p>
+                <h3 class="course-title">Data Analytics with Python </h3>
+                <p class="course-subtitle">Python can help Explore how to analyze and visualize data using Pandas, Matplotlib, and real datasets.</p>
 
                 <div>
                     <span class="rating">★★★★☆</span>
@@ -448,8 +368,7 @@
                         <div class="content-img-wrap position-relative">
                             <img src="https://speedyui-static.s3.amazonaws.com/content-section/content-4/img-2.jpg"
                                 alt="" class="img-fluid content-img-one" />
-                            <img src="https://speedyui-static.s3.amazonaws.com/content-section/content-4/img-1.jpg"
-                                alt="" class="img-fluid shadow-lg content-img-one" />
+
                         </div><!--.content-img-wrap-->
                     </div><!--.col-grid-->
                     <div class="col-lg-6 offset-lg-1">
@@ -524,7 +443,7 @@
             </div><!--.container-->
         </section>
         <!--====================== End Content Section ======================-->
-        <!--====================== Start Portfolio Section ======================-->
+        {{-- <!--====================== Start Portfolio Section ======================-->
         <section class="speedyui speedyui-portfolio py-5">
             <div class="container">
                 <!-- Start Section Title-->
@@ -740,7 +659,7 @@
                 </div><!--.grid-->
             </div><!--.container-->
         </section>
-        <!--====================== End Portfolio Section ======================-->
+        <!--====================== End Portfolio Section ======================--> --}}
         <!--====================== Start How it Workst Section ======================-->
         <section class="speedyui speedyui-work-process py-5">
             <div class="container">
@@ -843,7 +762,7 @@
             </div><!--.container-->
         </section>
         <!--====================== End How it Works Section ======================-->
-        <section class="speedyui speedyui-testimonial bg-light py-5">
+        {{-- <section class="speedyui speedyui-testimonial bg-light py-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -943,7 +862,7 @@
                     </div><!--.col-grid-->
                 </div><!--.row-->
             </div><!--.container-->
-        </section>
+        </section> --}}
         <!--==================== Start Team Section =====================-->
         <section class="speedyui speedyui-team py-5">
             <div class="container">
@@ -1235,185 +1154,466 @@
         <section class="speedyui speedyui-blog bg-white py-5">
             <div class="container">
                 <!-- Start Section Title-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-xl-7 col-lg-9">
-                        <div class="speedyui-section-title text-center">
-                            <span
-                                class="section-title-tagline small d-inline-flex align-items-center fw-semibolad text-uppercase rounded-pill px-4 py-2 mb-3">Our
-                                Blog</span>
-                            <h2 class="section-title display-5 fw-semibold mb-3">Latest Blog And Article</h2>
-                        </div><!--.speedyui-section-title-->
-                    </div><!--.col-grid-->
-                </div><!--.row-->
-                <!--End Section Title -->
-                <div class="row">
-                    <div class="col-lg-6 mt-4">
-                        <div class="card flex-md-row bg-white border-0 rounded-0 p-md-3">
-                            <div class="card-header rounded-0 p-0 border-0 position-relative overflow-hidden">
-                                <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-1.jpg"
-                                    class="card-img-top rounded-0" alt="" />
-                            </div><!--.card-header-->
-                            <div class="card-body px-2 px-md-4 py-4">
-                                <a href="#"
-                                    class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
-                                    Business
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Blog Grid</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --primary-dark: #2667cc;
+            --secondary-color: #ff006e;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            padding: 2rem 0;
+            background-color: #f9fafc;
+        }
+
+        /* Section Title Styling */
+        .speedyui-section-title {
+            margin-bottom: 3rem;
+        }
+
+        .section-title-tagline {
+            background: linear-gradient(90deg, rgba(58, 134, 255, 0.1), rgba(255, 0, 110, 0.1));
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .section-title {
+            color: var(--dark-color);
+            font-weight: 700;
+        }
+
+        /* Blog Card Styling */
+        .blog-grid {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-card {
+            height: 100%;
+            background: white;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .blog-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            z-index: 2;
+        }
+
+        .blog-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 240px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7));
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .blog-card:hover .card-img-overlay {
+            opacity: 1;
+        }
+
+        .read-more-btn {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transform: translateY(20px);
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(0);
+        }
+
+        .blog-card:hover .read-more-btn {
+            transform: translateY(0);
+        }
+
+        .post-category {
+            background: linear-gradient(90deg, rgba(58, 134, 255, 0.1), rgba(255, 0, 110, 0.1));
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+        }
+
+        .post-category:hover {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .card-title a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 1.4;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .card-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .post-meta-list {
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+
+        .post-meta-list li {
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .post-meta-list li {
+            color: var(--dark-color);
+        }
+
+        .post-meta-list .icon {
+            color: var(--primary-color);
+        }
+
+        /* Animation for cards appearing */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .blog-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .col-lg-6:nth-child(2) .blog-card {
+            animation-delay: 0.1s;
+        }
+
+        .col-lg-6:nth-child(3) .blog-card {
+            animation-delay: 0.2s;
+        }
+
+        .col-lg-6:nth-child(4) .blog-card {
+            animation-delay: 0.3s;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-img-container {
+                height: 200px;
+            }
+
+            .blog-card:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="blog-grid py-5">
+            <!-- Section Title -->
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="speedyui-section-title text-center">
+                        <span class="section-title-tagline small d-inline-flex align-items-center fw-semibold text-uppercase rounded-pill px-4 py-2 mb-3">
+                            <i class="fas fa-pen-nib me-2"></i> Our Blog
+                        </span>
+                        <h2 class="section-title display-5 fw-semibold mb-3">Latest Blog And Article</h2>
+                        <p class="text-muted lead">Discover insights, tips, and news from our expert team</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="row g-4">
+                <!-- Blog Card 1 -->
+                <div class="col-lg-6">
+                    <div class="blog-card">
+                        <div class="card-img-container">
+                            <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-1.jpg" class="card-img-top" alt="Business Strategy">
+                            <div class="card-img-overlay">
+                                <a href="#" class="read-more-btn">
+                                    Read More <i class="fas fa-arrow-right"></i>
                                 </a>
-                                <h4 class="card-title mb-3"><a href="#">We create some things for your
-                                        success</a></h4>
-                                <ul
-                                    class="post-meta-list list-unstyled border-top d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
-                                    <li class="post-date d-flex align-items-center me-4">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 18">
-                                                <path
-                                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
-                                                </path>
-                                                <path
-                                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z">
-                                                </path>
-                                            </svg>
-                                        </span> 3 mins ago
-                                    </li>
-                                    <li class="post-author d-flex align-items-center">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                            </svg>
-                                        </span> Admin
-                                    </li>
-                                </ul>
-                            </div><!--.card-body-->
-                        </div><!--.card-->
-                    </div><!--.col-grid-->
-                    <div class="col-lg-6 mt-4">
-                        <div class="card flex-md-row bg-white border-0 rounded-0 p-md-3">
-                            <div class="card-header rounded-0 p-0 border-0 position-relative overflow-hidden">
-                                <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-2.jpg"
-                                    class="card-img-top rounded-0" alt="" />
-                            </div><!--.card-header-->
-                            <div class="card-body px-2 px-md-4 py-4">
-                                <a href="#"
-                                    class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
-                                    Business
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <a href="#" class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
+                                <i class="fas fa-chart-line me-1"></i> Business
+                            </a>
+                            <h4 class="card-title mb-3">
+                                <a href="#">We create innovative solutions for your business success</a>
+                            </h4>
+                            <p class="card-text text-muted mb-4">Discover how our strategic approach can transform your business operations and drive growth in today's competitive market.</p>
+                            <ul class="post-meta-list list-unstyled d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
+                                <li class="post-date d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-clock"></i>
+                                    </span> 3 mins ago
+                                </li>
+                                <li class="post-author d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-user"></i>
+                                    </span> Admin
+                                </li>
+                                <li class="post-comments d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-comment"></i>
+                                    </span> 12
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-lg-6">
+                    <div class="blog-card">
+                        <div class="card-img-container">
+                            <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-2.jpg" class="card-img-top" alt="Digital Transformation">
+                            <div class="card-img-overlay">
+                                <a href="#" class="read-more-btn">
+                                    Read More <i class="fas fa-arrow-right"></i>
                                 </a>
-                                <h4 class="card-title mb-3"><a href="#">We create some things for your
-                                        success</a></h4>
-                                <ul
-                                    class="post-meta-list list-unstyled border-top d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
-                                    <li class="post-date d-flex align-items-center me-4">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 18">
-                                                <path
-                                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
-                                                </path>
-                                                <path
-                                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z">
-                                                </path>
-                                            </svg>
-                                        </span> 3 mins ago
-                                    </li>
-                                    <li class="post-author d-flex align-items-center">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                            </svg>
-                                        </span> Admin
-                                    </li>
-                                </ul>
-                            </div><!--.card-body-->
-                        </div><!--.card-->
-                    </div><!--.col-grid-->
-                    <div class="col-lg-6 mt-4">
-                        <div class="card flex-md-row bg-white border-0 rounded-0 p-md-3">
-                            <div class="card-header rounded-0 p-0 border-0 position-relative overflow-hidden">
-                                <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-3.jpg"
-                                    class="card-img-top rounded-0" alt="" />
-                            </div><!--.card-header-->
-                            <div class="card-body px-2 px-md-4 py-4">
-                                <a href="#"
-                                    class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
-                                    Business
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <a href="#" class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
+                                <i class="fas fa-laptop-code me-1"></i> Technology
+                            </a>
+                            <h4 class="card-title mb-3">
+                                <a href="#">Digital transformation strategies for modern enterprises</a>
+                            </h4>
+                            <p class="card-text text-muted mb-4">Learn about the key technologies and approaches that are helping businesses stay ahead in the digital age.</p>
+                            <ul class="post-meta-list list-unstyled d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
+                                <li class="post-date d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-clock"></i>
+                                    </span> 1 day ago
+                                </li>
+                                <li class="post-author d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-user"></i>
+                                    </span> Sarah Johnson
+                                </li>
+                                <li class="post-comments d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-comment"></i>
+                                    </span> 8
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-lg-6">
+                    <div class="blog-card">
+                        <div class="card-img-container">
+                            <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-3.jpg" class="card-img-top" alt="Marketing Trends">
+                            <div class="card-img-overlay">
+                                <a href="#" class="read-more-btn">
+                                    Read More <i class="fas fa-arrow-right"></i>
                                 </a>
-                                <h4 class="card-title mb-3"><a href="#">We create some things for your
-                                        success</a></h4>
-                                <ul
-                                    class="post-meta-list list-unstyled border-top d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
-                                    <li class="post-date d-flex align-items-center me-4">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 18">
-                                                <path
-                                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
-                                                </path>
-                                                <path
-                                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z">
-                                                </path>
-                                            </svg>
-                                        </span> 3 mins ago
-                                    </li>
-                                    <li class="post-author d-flex align-items-center">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                            </svg>
-                                        </span> Admin
-                                    </li>
-                                </ul>
-                            </div><!--.card-body-->
-                        </div><!--.card-->
-                    </div><!--.col-grid-->
-                    <div class="col-lg-6 mt-4">
-                        <div class="card flex-md-row bg-white border-0 rounded-0 p-md-3">
-                            <div class="card-header rounded-0 p-0 border-0 position-relative overflow-hidden">
-                                <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-4.jpg"
-                                    class="card-img-top rounded-0" alt="" />
-                            </div><!--.card-header-->
-                            <div class="card-body px-2 px-md-4 py-4">
-                                <a href="#"
-                                    class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
-                                    Business
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <a href="#" class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
+                                <i class="fas fa-bullhorn me-1"></i> Marketing
+                            </a>
+                            <h4 class="card-title mb-3">
+                                <a href="#">Top marketing trends to watch in 2023 and beyond</a>
+                            </h4>
+                            <p class="card-text text-muted mb-4">Explore the latest marketing trends that are reshaping how brands connect with their audiences and drive engagement.</p>
+                            <ul class="post-meta-list list-unstyled d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
+                                <li class="post-date d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-clock"></i>
+                                    </span> 2 days ago
+                                </li>
+                                <li class="post-author d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-user"></i>
+                                    </span> Michael Chen
+                                </li>
+                                <li class="post-comments d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-comment"></i>
+                                    </span> 15
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="col-lg-6">
+                    <div class="blog-card">
+                        <div class="card-img-container">
+                            <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-4.jpg" class="card-img-top" alt="Product Development">
+                            <div class="card-img-overlay">
+                                <a href="#" class="read-more-btn">
+                                    Read More <i class="fas fa-arrow-right"></i>
                                 </a>
-                                <h4 class="card-title mb-3"><a href="#">We create some things for your
-                                        success</a></h4>
-                                <ul
-                                    class="post-meta-list list-unstyled border-top d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
-                                    <li class="post-date d-flex align-items-center me-4">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 18">
-                                                <path
-                                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
-                                                </path>
-                                                <path
-                                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z">
-                                                </path>
-                                            </svg>
-                                        </span> 3 mins ago
-                                    </li>
-                                    <li class="post-author d-flex align-items-center">
-                                        <span class="icon d-inline-flex me-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                            </svg>
-                                        </span> Admin
-                                    </li>
-                                </ul>
-                            </div><!--.card-body-->
-                        </div><!--.card-->
-                    </div><!--.col-grid-->
-                </div><!--.row-->
-            </div><!--.container-->
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <a href="#" class="post-category px-3 py-1 d-inline-block fw-normal text-decoration-none mb-3">
+                                <i class="fas fa-cogs me-1"></i> Development
+                            </a>
+                            <h4 class="card-title mb-3">
+                                <a href="#">Agile product development methodologies for faster delivery</a>
+                            </h4>
+                            <p class="card-text text-muted mb-4">Understand how agile methodologies can accelerate your product development cycle while maintaining quality standards.</p>
+                            <ul class="post-meta-list list-unstyled d-flex flex-wrap justify-content-between align-items-center pt-3 m-0">
+                                <li class="post-date d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-clock"></i>
+                                    </span> 4 days ago
+                                </li>
+                                <li class="post-author d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-user"></i>
+                                    </span> David Wilson
+                                </li>
+                                <li class="post-comments d-flex align-items-center">
+                                    <span class="icon d-inline-flex me-1">
+                                        <i class="far fa-comment"></i>
+                                    </span> 6
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg px-5 py-3">
+                    <span>View All Articles</span>
+                    <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
         </section>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Add additional interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to cards
+            const cards = document.querySelectorAll('.blog-card');
+
+            cards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (!e.target.closest('a')) {
+                        const link = this.querySelector('.card-title a');
+                        if (link) {
+                            window.location.href = link.href;
+                        }
+                    }
+                });
+
+                // Add keyboard navigation
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && !e.target.closest('a')) {
+                        const link = this.querySelector('.card-title a');
+                        if (link) {
+                            window.location.href = link.href;
+                        }
+                    }
+                });
+
+                // Set tabindex for better accessibility
+                card.setAttribute('tabindex', '0');
+            });
+        });
+    </script>
+</body>
+</html>
         <!--====================== End Blog Section ======================-->
         <!--====================== Start Newsletter Section ======================-->
         <section class="speedyui speedyui-newsletter">
@@ -1432,13 +1632,7 @@
                                 <button form="newsletter" type="submit"
                                     class="btn fw-semibold rounded-pill">Subscribe</button>
                             </form>
-                            <span class="d-inline-block mt-3"><small><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="13" height="13" fill="currentColor"
-                                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-                                    </svg> Trust us, we will never send you spam</small></span>
-                        </div><!--.col-grid-->
+
                     </div><!--.row-->
                 </div><!--.newsletter-wrapper-->
             </div><!--.container-->
