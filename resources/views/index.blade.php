@@ -173,34 +173,74 @@
                 </div><!--.row-->
                 <!--End Section Title -->
                 <div class="row">
-                    <div class="col-md-4 my-3">
-                        <div class="feature-wrapper text-center">
-                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/1.jpg"
-                                class="img-fluid mb-4 pb-2" alt="" />
-                            <h4 class="fs-4 fw-semibold mb-3">Digital Marketing</h4>
-                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
-                        </div><!--.feature-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 my-3">
-                        <div class="feature-wrapper text-center">
-                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/2.jpg"
-                                class="img-fluid mb-4 pb-2" alt="" />
-                            <h4 class="fs-4 fw-semibold mb-3">UX/UI Design</h4>
-                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
-                        </div><!--.feature-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 my-3">
-                        <div class="feature-wrapper text-center">
-                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/3.jpg"
-                                class="img-fluid mb-4 pb-2" alt="" />
-                            <h4 class="fs-4 fw-semibold mb-3">SEO Optimization</h4>
-                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
-                        </div><!--.feature-wrapper-->
-                    </div><!--.col-grid-->
-                </div><!--.row-->
+    <div class="col-md-4 my-3">
+        <div class="feature-wrapper text-center">
+            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/1.jpg"
+                class="img-fluid mb-4 pb-2" alt="Digital Marketing" />
+            <h4 class="fs-4 fw-bold mb-2">Digital Marketing</h4>
+            <p class="fw-bold text-dark mb-3 px-md-3">Master online marketing strategies to grow businesses</p>
+            <p class="text-muted px-md-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+            <button class="btn btn-purple px-4">Enroll</button>
+        </div><!--.feature-wrapper-->
+    </div><!--.col-grid-->
+
+    <div class="col-md-4 my-3">
+        <div class="feature-wrapper text-center">
+            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/2.jpg"
+                class="img-fluid mb-4 pb-2" alt="UX/UI Design" />
+            <h4 class="fs-4 fw-bold mb-2">UX/UI Design</h4>
+            <p class="fw-bold text-dark mb-3 px-md-3">Create intuitive user experiences and beautiful interfaces</p>
+            <p class="text-muted px-md-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+            <button class="btn btn-purple px-4">Enroll</button>
+        </div><!--.feature-wrapper-->
+    </div><!--.col-grid-->
+
+    <div class="col-md-4 my-3">
+        <div class="feature-wrapper text-center">
+            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/3.jpg"
+                class="img-fluid mb-4 pb-2" alt="SEO Optimization" />
+            <h4 class="fs-4 fw-bold mb-2">SEO Optimization</h4>
+            <p class="fw-bold text-dark mb-3 px-md-3">Boost website visibility and organic traffic growth</p>
+            <p class="text-muted px-md-3 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+            <button class="btn btn-purple px-4">Enroll</button>
+        </div><!--.feature-wrapper-->
+    </div><!--.col-grid-->
+</div><!--.row-->
+
+<style>
+    /* Purple button styling */
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 20px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-purple:hover {
+        background-color: #5936a3;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(111, 66, 193, 0.3);
+    }
+
+    /* Optional: Make feature cards more prominent */
+    .feature-wrapper {
+        padding: 25px 20px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+    .feature-wrapper:hover {
+        transform: translateY(-5px);
+    }
+</style>
             </div><!--.container-->
         </section>
         <!--====================== End Feature Section ======================-->
