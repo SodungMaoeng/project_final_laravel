@@ -172,271 +172,35 @@
                     </div><!--.col-grid-->
                 </div><!--.row-->
                 <!--End Section Title -->
-                <!-- 3-Grid HTML Structure -->
-<div class="container py-5">
-    <div class="row">
-    <!-- Marketing Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e3f2fd; color: #1565c0;">MARKETING</div>
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Digital Marketing">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Digital Marketing Strategy for Beginners</h3>
-                <p class="course-subtitle">Learn SEO, email marketing, social media strategy, and paid ads in one power-packed course.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.8 (2,500+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Amanda L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Personal Development Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #f3e5f5; color: #7b1fa2;">PERSONAL</div>
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Productivity">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Productivity & Time Management</h3>
-                <p class="course-subtitle">Learn how to organize your time, stay focused, and beat procrastination with proven techniques.</p>
-
-                <div>
-                    <span class="rating">★★★★★</span>
-                    <span class="review-count">4.9 (3,000+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Chris L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Data Science Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e8f5e9; color: #2e7d32;">DATA SCIENCE</div>
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Data Science">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Data Analytics with Python Programming </h3>
-                <p class="course-subtitle">Python help explore how to analyze and visualize data using Pandas, Matplotlib, and real datasets.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.7 (1,900+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Fatima N.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container py-5">
-    <div class="row">
-    <!-- Marketing Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e3f2fd; color: #1565c0;">MARKETING</div>
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Digital Marketing">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Digital Marketing Strategy for Beginners</h3>
-                <p class="course-subtitle">Learn SEO, email marketing, social media strategy, and paid ads in one power-packed course.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.8 (2,500+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Amanda L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Personal Development Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #f3e5f5; color: #7b1fa2;">PERSONAL</div>
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Productivity">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Productivity & Time Management</h3>
-                <p class="course-subtitle">Learn how to organize your time, stay focused, and beat procrastination with proven techniques.</p>
-
-                <div>
-                    <span class="rating">★★★★★</span>
-                    <span class="review-count">4.9 (3,000+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Chris L.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Data Science Card -->
-    <div class="col-md-4">
-        <div class="course-card">
-            <div class="position-relative">
-                <div class="category-badge" style="background-color: #e8f5e9; color: #2e7d32;">DATA SCIENCE</div>
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                     class="course-image" alt="Data Science">
-            </div>
-            <div class="card-body">
-                <h3 class="course-title">Data Analytics with Python Programming </h3>
-                <p class="course-subtitle">Python help explore how to analyze and visualize data using Pandas, Matplotlib, and real datasets.</p>
-
-                <div>
-                    <span class="rating">★★★★☆</span>
-                    <span class="review-count">4.7 (1,900+ reviews)</span>
-                </div>
-
-                <div class="instructor">
-                    <span class="instructor-name">Fatima N.</span> Instructor
-                </div>
-
-                <button class="btn btn-enroll">Enroll Now</button>
-            </div>
-        </div>
-    </div>
-</div>
-    <style>
-        /* CSS for Course Cards */
-:root {
-    --purple: #6a11cb;
-    --light-purple: #7c4dff;
-    --card-border-radius: 16px;
-    --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.course-card {
-    border: none;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    height: 100%;
-    margin-bottom: 2rem;
-}
-
-.course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-}
-
-.category-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    z-index: 2;
-}
-
-.course-image {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-
-.course-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.course-subtitle {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: #555;
-    line-height: 1.4;
-}
-
-.rating {
-    color: #ffc107;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-}
-
-.review-count {
-    color: #666;
-    font-size: 0.85rem;
-    margin-left: 0.5rem;
-}
-
-.instructor {
-    color: #777;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
-.instructor-name {
-    font-weight: 600;
-}
-
-.btn-enroll {
-    background: linear-gradient(135deg, var(--purple), var(--light-purple));
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 25px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    width: 100%;
-    display: block;
-}
-
-.btn-enroll:hover {
-    transform: scale(1.05);
-    color: white;
-    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
-}
-    </style>
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <div class="feature-wrapper text-center">
+                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/1.jpg"
+                                class="img-fluid mb-4 pb-2" alt="" />
+                            <h4 class="fs-4 fw-semibold mb-3">Digital Marketing</h4>
+                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+                        </div><!--.feature-wrapper-->
+                    </div><!--.col-grid-->
+                    <div class="col-md-4 my-3">
+                        <div class="feature-wrapper text-center">
+                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/2.jpg"
+                                class="img-fluid mb-4 pb-2" alt="" />
+                            <h4 class="fs-4 fw-semibold mb-3">UX/UI Design</h4>
+                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+                        </div><!--.feature-wrapper-->
+                    </div><!--.col-grid-->
+                    <div class="col-md-4 my-3">
+                        <div class="feature-wrapper text-center">
+                            <img src="https://speedyui-static.s3.amazonaws.com/feature-section/feature-6/3.jpg"
+                                class="img-fluid mb-4 pb-2" alt="" />
+                            <h4 class="fs-4 fw-semibold mb-3">SEO Optimization</h4>
+                            <p class="text-muted px-md-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Ipsa magnam iure perferendis architecto omnis repudiandae.</p>
+                        </div><!--.feature-wrapper-->
+                    </div><!--.col-grid-->
+                </div><!--.row-->
             </div><!--.container-->
         </section>
         <!--====================== End Feature Section ======================-->
