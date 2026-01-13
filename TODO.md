@@ -1,0 +1,3 @@
+-   [ ] Add import for Illuminate\Support\Facades\File in CourseController.php
+-   [ ] Fix $data extraction in store function to include 'title', 'description', 'price', 'discount', 'start_date'
+-   [ ] Replace image upload logic with video upload logic in store function
