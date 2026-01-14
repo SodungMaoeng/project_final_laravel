@@ -1,79 +1,100 @@
 <?php
-// app/Models/Student.php
 
-namespace App\Models;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use App\Models\Student;
+use Illuminate\Http\Request;
 
-class Student extends Model
+class StudentController extends Controller
 {
-    protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'student_id',
-        'profile_image',
-        'status',
-        'address',
-        'date_of_birth',
-        'joined_date',
-        'total_enrollments',
-        'completed_courses'
-    ];
-
-    protected $casts = [
-        'date_of_birth' => 'date',
-        'joined_date' => 'date',
-    ];
-
-    public function enrollments(): HasMany
+    public function index()
     {
-        return $this->hasMany(Enrollment::class);
+        $students = Student::all();
+        return view('students.index', compact('students'));
     }
 
-    public function activeEnrollments(): HasMany
+    public function create()
     {
-        return $this->enrollments()->active();
+        return view('students.create');
     }
 
-    public function completedEnrollments(): HasMany
+    public function store(Request $request)
     {
-        return $this->enrollments()->completed();
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:students',
+            'phone' => 'nullable|string|max:20',
+            'student_id' => 'required|string|unique:students',
+            'address' => 'nullable|string',
+            'date_of_birth' => 'nullable|date',
+            'joined_date' => 'nullable|date',
+            'status' => 'required|in:active,inactive',
+        ]);
+
+        Student::create($validated);
+        return redirect()->route('students.index')->with('success', 'Student created successfully.');
     }
 
-    public function enrollInCourse($courseId, $attributes = [])
+    public function show($id)
     {
-        $enrollment = $this->enrollments()->create(array_merge([
-            'course_id' => $courseId,
-            'enrollment_date' => now(),
-            'status' => 'active',
-        ], $attributes));
+        $student = Student::findOrFail($id);
+        return view('students.show', compact('student'));
+    }
 
-        $this->increment('total_enrollments');
+    public function edit($id)
+    {
+        $student = Student::findOrFail($id);
+        return view('students.edit', compact('student'));
+    }
 
-        // Update course enrollment count
-        if ($course = Course::find($courseId)) {
-            $course->increment('students_enrolled');
+    public function update(Request $request, $id)
+    {
+        $student = Student::findOrFail($id);
+
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:students,email,' . $id,
+            'phone' => 'nullable|string|max:20',
+            'student_id' => 'required|string|unique:students,student_id,' . $id,
+            'address' => 'nullable|string',
+            'date_of_birth' => 'nullable|date',
+            'joined_date' => 'nullable|date',
+            'status' => 'required|in:active,inactive',
+        ]);
+
+        $student->update($validated);
+        return redirect()->route('students.index')->with('success', 'Student updated successfully.');
+    }
+
+    public function destroy($id)
+    {
+        $student = Student::findOrFail($id);
+        $student->delete();
+        return redirect()->route('students.index')->with('success', 'Student deleted successfully.');
+    }
+
+    public function enrollCourse(Request $request, $student)
+    {
+        $student = Student::findOrFail($student);
+
+        $validated = $request->validate([
+            'course_id' => 'required|exists:courses,id',
+        ]);
+
+        $student->enrollInCourse($validated['course_id']);
+        return redirect()->back()->with('success', 'Student enrolled successfully.');
+    }
+
+    public function unenrollCourse($student, $course)
+    {
+        $student = Student::findOrFail($student);
+        $enrollment = $student->enrollments()->where('course_id', $course)->first();
+
+        if ($enrollment) {
+            $enrollment->delete();
+            $student->decrement('total_enrollments');
         }
 
-        return $enrollment;
-    }
-
-    public function getProgressAttribute()
-    {
-        $total = $this->enrollments->count();
-        $completed = $this->enrollments->where('status', 'completed')->count();
-
-        return $total > 0 ? round(($completed / $total) * 100) : 0;
-    }
-
-    public function getAverageGradeAttribute()
-    {
-        $completedEnrollments = $this->enrollments()->completed()->whereNotNull('grade')->get();
-
-        if ($completedEnrollments->isEmpty()) return null;
-
-        return $completedEnrollments->avg('grade');
+        return redirect()->back()->with('success', 'Student unenrolled successfully.');
     }
 }
