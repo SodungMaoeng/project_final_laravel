@@ -10,3 +10,159 @@
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
 }
+/* Course Cards Styling */
+.course-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+}
+
+.course-image {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-image {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.course-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #333;
+    line-height: 1.3;
+    min-height: 3.5rem;
+}
+
+.course-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    min-height: 4.5rem;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.original-price {
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    font-size: 1.2rem;
+    color: #dc3545;
+}
+
+.current-price {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.review-count {
+    color: #666;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.instructor {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn-enroll {
+    background: linear-gradient(135deg, #6a11cb, #7c4dff);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-enroll:hover {
+    background: linear-gradient(135deg, #5a0cb3, #6b3de8);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .course-image {
+        height: 180px;
+    }
+
+    .course-title {
+        font-size: 1.2rem;
+    }
+
+    .course-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+/* Loading animation for empty state */
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.loading-card {
+    animation: pulse 1.5s infinite;
+}

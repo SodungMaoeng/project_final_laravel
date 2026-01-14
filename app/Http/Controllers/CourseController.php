@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
+use App\Models\Course;
 
-use App\Models\CourseModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
@@ -15,7 +15,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $rows = CourseModel::all();
+        $rows = Course::all();
         return view('course.index', compact('rows'));
     }
 
@@ -47,7 +47,7 @@ class CourseController extends Controller
                 ->store('images/courses', 'public');
         }
 
-        CourseModel::create($data);
+        Course::create($data);
 
         return redirect()->route('course.index')
             ->with('success', 'Course created successfully');
@@ -58,7 +58,7 @@ class CourseController extends Controller
      */
     public function edit(string $id)
     {
-        $course = CourseModel::findOrFail($id);
+        $course = Course::findOrFail($id);
         return view('course.edit', compact('course'));
     }
 
@@ -75,7 +75,7 @@ class CourseController extends Controller
             'image'       => 'nullable|image|mimes:jpg,jpeg,png,webp|max:5120',
         ]);
 
-        $course = CourseModel::findOrFail($id);
+        $course = Course::findOrFail($id);
         $data = $request->only(['title', 'description', 'price', 'discount']);
 
         if ($request->hasFile('image')) {
@@ -101,7 +101,7 @@ class CourseController extends Controller
      */
     public function destroy(string $id)
     {
-        $course = CourseModel::findOrFail($id);
+        $course = Course::findOrFail($id);
 
         if ($course->image && Storage::disk('public')->exists($course->image)) {
             Storage::disk('public')->delete($course->image);

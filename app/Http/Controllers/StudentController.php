@@ -1,90 +1,79 @@
 <?php
+// app/Models/Student.php
 
-namespace App\Http\Controllers;
+namespace App\Models;
 
-use App\Models\StudentModel;
-use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class StudentController extends Controller
+class Student extends Model
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'student_id',
+        'profile_image',
+        'status',
+        'address',
+        'date_of_birth',
+        'joined_date',
+        'total_enrollments',
+        'completed_courses'
+    ];
+
+    protected $casts = [
+        'date_of_birth' => 'date',
+        'joined_date' => 'date',
+    ];
+
+    public function enrollments(): HasMany
     {
-        $rows = StudentModel::all();
-        return view('students.index', compact('rows'));
+        return $this->hasMany(Enrollment::class);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function activeEnrollments(): HasMany
     {
-        return view('students.create');
+        return $this->enrollments()->active();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function completedEnrollments(): HasMany
     {
-        $request->validate([
-            'title' => 'required|string|max:255',
-            'subtitle' => 'nullable|string|max:255',
-            'description' => 'nullable|string',
-        ]);
-
-        $data = $request->only(['title', 'subtitle', 'description']);
-
-        StudentModel::create($data);
-
-        return redirect()->route('students.index')->with('success', 'Menu created successfully.');
+        return $this->enrollments()->completed();
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function enrollInCourse($courseId, $attributes = [])
     {
-        //
+        $enrollment = $this->enrollments()->create(array_merge([
+            'course_id' => $courseId,
+            'enrollment_date' => now(),
+            'status' => 'active',
+        ], $attributes));
+
+        $this->increment('total_enrollments');
+
+        // Update course enrollment count
+        if ($course = Course::find($courseId)) {
+            $course->increment('students_enrolled');
+        }
+
+        return $enrollment;
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function getProgressAttribute()
     {
+        $total = $this->enrollments->count();
+        $completed = $this->enrollments->where('status', 'completed')->count();
 
-        $menu = StudentModel::findOrFail($id);
-        return view('students.edit', compact('menu'));
+        return $total > 0 ? round(($completed / $total) * 100) : 0;
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function getAverageGradeAttribute()
     {
-        $request->validate([
-            'title' => 'required|string|max:255',
-            'subtitle' => 'nullable|string|max:255',
-            'description' => 'nullable|string',
-        ]);
-        $data = $request->only(['title', 'subtitle', 'description']);
+        $completedEnrollments = $this->enrollments()->completed()->whereNotNull('grade')->get();
 
-        $student = StudentModel::findOrFail($id);
-        $student->update($data);
+        if ($completedEnrollments->isEmpty()) return null;
 
-        return redirect()->route('students.index')->with('success', 'Menu updated successfully.');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        $student = StudentModel::findOrFail($id);
-        $student->delete();
-        return redirect()->route('students.index')->with('success', 'Menu deleted successfully.');
+        return $completedEnrollments->avg('grade');
     }
 }
